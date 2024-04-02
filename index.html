@@ -1,13 +1,41 @@
 <!doctype html>
-<html lang="en">
+<html lang="el">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <script src="https://kit.fontawesome.com/60ebf8a7ca.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/svg+xml" href="/logo.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Μια σταγώνα, μια ζωή</title>
   </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+    <div id="transition-area">
+    <button class="blueButton" id='translation-toggle'></button>
+    <div id='google_translate_element'></div>
+  </div>
+      <script>
+        function enableTranslation(){if(!document.getElementById("googleTranslateScript")){var e = document.createElement("script");e.setAttribute("id", "googleTranslateScript");e.type="text/javascript",e.async=!0,e.src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit";var a=document.getElementById("translation-toggle");a.parentNode.insertBefore(e,a);localStorage.setItem("GoogleTranslation", "Enabled");document.getElementById("translation-toggle").addEventListener("click", disableTranslation);document.getElementById("translation-toggle").innerHTML = `<span class='notranslate'>Απενεργοποίηση μετάφρασης</span>Disable translation`;document.getElementById("translation-toggle").classList.add('enabled');document.getElementById('translation-toggle').removeEventListener('click', enableTranslation)}}
+        </script>
+<script>
+  function googleTranslateElementInit(){new google.translate.TranslateElement({pageLanguage:'el'},'google_translate_element')};
+  </script>
+  
+  <script>
+    if (localStorage.getItem('GoogleTranslation') == 'Enabled'){
+    enableTranslation();
+    } else {
+    document.getElementById('translation-toggle').addEventListener('click', enableTranslation);
+    document.getElementById('translation-toggle').innerHTML = '<span>Enable Translation</span>';
+    }
+  function disableTranslation(){
+    document.getElementById('googleTranslateScript').remove();
+    document.getElementById('google_translate_element').remove();
+    localStorage.removeItem('GoogleTranslation');
+    document.getElementById('translation-toggle').addEventListener('click', enableTranslation);
+    document.getElementById('translation-toggle').innerHTML = '<span>Enable Translation</span>';
+    location.reload();
+    };
+    </script>
   </body>
 </html>
