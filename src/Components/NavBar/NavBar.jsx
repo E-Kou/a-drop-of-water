@@ -8,7 +8,7 @@ import "./NavBar.css"
 import { useState, useEffect } from "react";
 
 const AllLinks = [
-  {no: 1, name:'Τμήματα εργασίσας', to:"/parts-of-study"},
+  {no: 1, name:'Τμήματα εργασίας', to:"/pages"},
   {no: 2, name:'Σχετικά με εμάς', to:"/about-us"},
 ];
 

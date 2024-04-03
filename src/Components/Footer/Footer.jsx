@@ -41,9 +41,9 @@ function Footer(props){
                 <div id='Tab3' className="CardContents">
                     <div className='CardArea'>
                     <ul>
-                        <li><a href='https://www.facebook.com/profile.php?id=100064293242239'><i class="fa-brands fa-facebook"></i> Facebook</a></li>
+                        <li><a href='https://www.facebook.com/profile.php?id=100064293242239'><i className="fa-brands fa-facebook"></i> Facebook</a></li>
                         <li><a href='https://www.youtube.com/@1o_gym_larisas/videos'><i className="fab fa-youtube"></i> Youtube</a></li>
-                        <li><a href='https://ehl.gr/'><i class="fa-solid fa-globe"></i> Website</a></li>
+                        <li><a href='https://ehl.gr/'><i className="fa-solid fa-globe"></i> Website</a></li>
                     </ul>
                     </div>
                 </div>

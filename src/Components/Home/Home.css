@@ -61,6 +61,7 @@
     background-size: cover;
     border-radius: 10px;
     background-position: top;
+    overflow: visible;
 }
 .Banner a{
     color: #fff;
@@ -102,6 +103,9 @@
 #BannerInfo{
     display: flex;
     align-items: center;
+    z-index: 2;
+    position: relative;
+    text-shadow: 0 0 3px #00000099;
 }
 
 

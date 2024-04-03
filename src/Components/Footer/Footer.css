@@ -125,7 +125,7 @@ footer:has(#bottom li input:checked) > div:not(#bottom){
     position: absolute;
     bottom: 100%;
     background: #0f0f0f;
-    width: inherit;
+    width: 100%;
     box-shadow: 0px -15px 20px 0px #e3b4679e;
 }
 #bottom .CardContents .CardArea{
