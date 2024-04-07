@@ -21,6 +21,10 @@ footer{
     font-size: 1rem;
 }
 
+footer #sections h2{
+    margin-bottom: 5px;
+}
+
 footer > div:not(#bottom){
     transition: filter 500ms;
     transition-delay: 250ms;
@@ -31,10 +35,24 @@ footer:has(#bottom li input:checked) > div:not(#bottom){
     transition-delay: 100ms;
 }
 
+footer #sections #pageLinks{
+    list-style: none;
+}
+footer #sections #pageLinks li{
+    padding: 3px 0;
+    font-size: 1.05rem;
+}
+footer #sections #pageLinks li:first-child{
+    padding-top: 0;
+}
+footer #sections #pageLinks li a{
+    text-decoration: none;
+}
+
 #bottom{
     margin: auto;
     background: #0f0f0f;
-    margin-top: 18px;
+    margin-top:20px;
     position: relative;
 }
 #bottom #CardMenu{
@@ -101,7 +119,7 @@ footer:has(#bottom li input:checked) > div:not(#bottom){
     justify-items: center;
     align-items: center;
     margin: auto;
-    box-shadow: 0px -10px 20px 0px #e3b4679e;
+    box-shadow: 0 -10px 20px #0272c161;
 }
 
 #bottom li #FooterDisclaimer{
@@ -126,7 +144,9 @@ footer:has(#bottom li input:checked) > div:not(#bottom){
     bottom: 100%;
     background: #0f0f0f;
     width: 100%;
-    box-shadow: 0px -15px 20px 0px #e3b4679e;
+    box-shadow: 0 -10px 20px #0272c161;
+    user-select: none;
+    pointer-events: none;
 }
 #bottom .CardContents .CardArea{
     overflow: hidden;
@@ -161,6 +181,7 @@ gap: 20px;
     grid-template-rows: 1fr;
     transition: grid-template-rows 200ms;
     transition-delay: 100ms;
+    user-select: auto;
 }
 
 #bottom:has(#TabBTN1:checked) > div > ul > li:not(:has(#TabBTN1)) label,#bottom:has(#TabBTN2:checked) > div > ul > li:not(:has(#TabBTN2)) label,#bottom:has(#TabBTN3:checked) > div > ul > li:not(:has(#TabBTN3)) label{

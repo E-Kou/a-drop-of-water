@@ -1,5 +1,7 @@
 import './Footer.css'
 import fullLogo from '../../assets/logo-full.webp';
+import { PublicPageList} from '../Pages/PagesList';
+import { Link } from 'react-router-dom';
 
 function Footer(props){
     return(
@@ -18,8 +20,10 @@ function Footer(props){
                 <p>Καλησπέρα κόσμε@</p>
             </div>
             <div>
-            <h5>{props.title}</h5>
-            <p>{props.text}</p>
+      <h2>Σελίδες εργασίας</h2>
+      <ul id='pageLinks'>
+    {PublicPageList.map((page)=> <li key={page.no}><Link to={page.path}>{page.name}</Link></li>)}
+    </ul>
             </div>
             </div>
             <div className="row" id='bottom'>

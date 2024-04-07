@@ -236,6 +236,7 @@ box-shadow: none !important;
 display: none !important;
 }
 #translation-toggle{
+  display: block !important;
  border-radius: 100vmax;
  background: #1e59f1;
  padding: 7px 15px;

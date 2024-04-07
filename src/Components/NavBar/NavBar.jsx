@@ -82,7 +82,7 @@ function NavBar(){
       <>
 <nav className="mainNav">
       <MobileDesktopNavBar Width={screenWidth} setButton={setNavBarRevealBTN} Button={NavBarRevealBTN} />
-      <div id="right">{'/sign-in' == '/sign-in' ? (<NavLink className="blueButton" to="/sign-up">Εγγραφή</NavLink >) : (<NavLink className="blueButton" to="/sign-in">Σύνδεση</NavLink >)}</div>
+      <div id="right">{useLocation().pathname == '/sign-in' ? (<NavLink className="blueButton" to="/sign-up">Εγγραφή</NavLink >) : (<NavLink className="blueButton" to="/sign-in">Σύνδεση</NavLink >)}</div>
     </nav>
     <MobileSideBar setButton={setNavBarRevealBTN} Width={screenWidth} />
 </>

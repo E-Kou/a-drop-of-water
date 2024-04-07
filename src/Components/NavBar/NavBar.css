@@ -157,7 +157,7 @@ nav.mainNav ul.mainNav li a:not(:has(img)){
     bottom: 0;
     padding: 15px;
     background: var(--sub-transparent-bg);
-    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    -webkit-backdrop-filter: saturate(180%) blur(9px);
     backdrop-filter: saturate(180%) blur(20px);
     z-index: 14;
     transition: all var(--long-inimation-speed) ease;
