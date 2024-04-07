@@ -2,10 +2,11 @@ import './Footer.css'
 import fullLogo from '../../assets/logo-full.webp';
 import { PublicPageList} from '../Pages/PagesList';
 import { Link } from 'react-router-dom';
+import {motion} from 'framer-motion';
 
 function Footer(props){
     return(
-        <footer>
+        <motion.footer layout>
             {/* <div>
             <div className="row warning-note"><h3></h3>
   <p></p></div>
@@ -31,7 +32,8 @@ function Footer(props){
                 <div id='Tab1' className="CardContents">
                     <div className='CardArea'>
                     <h4>Θεσσαλία</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae nobis quos voluptates culpa quae laudantium magnam est. Pariatur, neque doloribus. Aspernatur commodi ipsam obcaecati provident.</p>
+                    <p>Η Θεσσαλία είναι ένα γεωγραφικό διαμέρισμα στην κεντρική περίπου Ελλάδα. Θυμίζεται για τον Θεσσαλικό Κάμπο, ο οποίος όντας γονιμότατος στηίζει την γεωργία από την αρχαιότητα μέχρι σήμερα. Όμως η κακοκαιρία "Daniel" προκάλεσε τεράστιες καταστροφές τις οποίες, μεταξύ άλλων, αποφασίσαμε να μελετήσουμε.</p>
+                    <Link to='/pages/thessaly' style={{marginTop:10}} className='blueButton'>Μάθετε περισσότερα</Link >
                     </div>
                 </div>
 
@@ -51,22 +53,39 @@ function Footer(props){
                     </ul>
                     </div>
                 </div>
+                <div id='Tab4' className="CardContents">
+                    <div className='CardArea'>
+                        <div>
+                        <h4>Μαθητές:</h4>
+                    <ul>
+                        <li>Άγγελος Γεωργίου</li>
+                        <li>Ευάγγελος Κουτσογιάννης</li>
+                    </ul>
+                    </div>
+                    <div>
+                        <h4>Καθηγητής:</h4>
+                    <ul>
+                        <li>Βασίλειος Τουρναβίτης</li>
+                    </ul>
+                    </div>
+                    </div>
+                </div>
 
                 </div>
                 <div>
                     <ul>
                         <li><div><input type="checkbox" id="TabBTN1"/><label htmlFor="TabBTN1"><i className='back fa-solid fa-arrow-left'></i>Η Θεσσαλία μας</label>  </div>
                         </li>
-                        <li><div><input type="checkbox" id="TabBTN2"/><label htmlFor="TabBTN2"><i className='back fa-solid fa-arrow-left'></i>Σχετικά με εμάς</label></div>
+                        <li><div><input type="checkbox" id="TabBTN2"/><label htmlFor="TabBTN2"><i className='back fa-solid fa-arrow-left'></i>Πηγές</label></div>
                         </li>
                         <li><div><input type="checkbox" id="TabBTN3"/><label htmlFor="TabBTN3"><i className='back fa-solid fa-arrow-left'></i>1ο Πειραματικό Γυμνάσιο Λάρισας</label> </div>
                         </li>
-                        <li><div><input type="checkbox" id="TabBTN4"/><label htmlFor="TabBTN4" id='FooterDisclaimer'><i className='back fa-solid fa-arrow-left'></i>Αυτή η ιστοσελίδα σχεδιάστηκε από τον Ευάγγελο Κουτσογιάννη</label></div>
+                        <li><div><input type="checkbox" id="TabBTN4"/><label htmlFor="TabBTN4" id='FooterDisclaimer'><i className='back fa-solid fa-arrow-left'></i>Μέλη εργασίας</label></div>
                         </li>
                     </ul>
                 </div>
             </div>
-        </footer>
+        </motion.footer>
     )
 }
 

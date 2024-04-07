@@ -31,6 +31,8 @@
     position: relative;
     width: clamp(200px, 50%, 70vw);
     box-sizing: border-box;
+    clip-path: inset(0);
+    overflow: hidden;
 }
 #imgWrapper::after{
     content: "";
@@ -129,10 +131,11 @@
     flex-direction: column;
     justify-content: space-between;
     padding-right: 15px;
-    align-items: center;
-    max-width: 325px;
     margin: 0 auto;
-    min-width: clamp(0px, 200px, 95vw);
+    min-width: clamp(0px, 250px, 95vw);
+}
+.InfoCards > div .secondaryButton{
+    margin: 0 auto;
 }
 
 @media screen and (max-width: 1200px) {

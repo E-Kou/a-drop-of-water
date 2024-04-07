@@ -154,13 +154,9 @@ font-weight: 700;
  display: flex;
  flex-wrap: wrap;
  justify-content: center;
- margin: 20px auto;
- align-items: center;
  gap: 15px;
+ padding: 10px;
 }
-#transition-area:has(#translation-toggle.enabled){
-  padding-bottom: 20px;
-  }
 .fixed-con {
  z-index: 9724790009779558!important;
  background-color: #f7f8fc;
@@ -236,7 +232,7 @@ box-shadow: none !important;
 display: none !important;
 }
 #translation-toggle{
-  display: block !important;
+  display: flex !important;
  border-radius: 100vmax;
  background: #1e59f1;
  padding: 7px 15px;

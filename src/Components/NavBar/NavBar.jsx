@@ -14,7 +14,7 @@ const AllLinks = [
 
 
 function NavItem(props){
-  return <li>{props.noNav ? <Link to={props.to}>{props.name}</Link > : <NavLink onClick={props.on_click} to={props.to}>{props.name}</NavLink >}</li>
+  return <li>{props.noNav ? <Link to={props.to}>{props.name}</Link > : <NavLink end onClick={props.on_click} to={props.to}>{props.name}</NavLink >}</li>
 };
 
 function NavBar(){
@@ -36,7 +36,7 @@ function NavBar(){
           <ul id="LinkBar">
           <NavItem to="/" name="Αρχική" />
                 {AllLinks.map((link) =>
-          <NavItem to={link.to} name={link.name} key={link.no} noNav={link.noNav}/>
+          <NavItem  to={link.to} name={link.name} key={link.no} noNav={link.noNav}/>
           )}
           </ul>
         </nav>

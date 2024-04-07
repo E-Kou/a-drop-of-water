@@ -73,7 +73,6 @@ footer #sections #pageLinks li a{
     width: max-content;
     display: block;
     cursor: pointer;
-    width: auto;
 }
 #bottom li input:focus-visible + label{
     background-color: #ffffff24;
@@ -124,9 +123,6 @@ footer #sections #pageLinks li a{
 
 #bottom li #FooterDisclaimer{
     text-align: right;
-    font-weight: 100;
-    font-size: 14px;
-    color: #cacaca;
     width: auto;
 }
 
@@ -153,6 +149,11 @@ footer #sections #pageLinks li a{
     padding: 0 10px;
     max-height: 300px;
 }
+#bottom .CardContents#Tab4 .CardArea{
+display: flex;
+flex-wrap: wrap;
+gap: 20px;
+}
 #bottom .CardContents *{
     opacity: 0;
     transition: opacity 400ms ease-in-out;
@@ -161,7 +162,7 @@ footer #sections #pageLinks li a{
 #bottom .CardContents h4{
     padding: 10px 0;
 }
-#bottom .CardContents ul{
+#bottom .CardContents#Tab3 ul{
 font-size: 1.3rem;
 padding: 10px;
 display: flex;
@@ -177,14 +178,15 @@ gap: 20px;
     width: fit-content;
 }
 
-#bottom:has(#TabBTN1:checked) #Tab1,#bottom:has(#TabBTN2:checked) #Tab2,#bottom:has(#TabBTN3:checked) #Tab3{
+#bottom:has(#TabBTN1:checked) #Tab1,#bottom:has(#TabBTN2:checked) #Tab2,#bottom:has(#TabBTN3:checked) #Tab3,#bottom:has(#TabBTN4:checked) #Tab4{
     grid-template-rows: 1fr;
     transition: grid-template-rows 200ms;
     transition-delay: 100ms;
     user-select: auto;
+    pointer-events: all;
 }
 
-#bottom:has(#TabBTN1:checked) > div > ul > li:not(:has(#TabBTN1)) label,#bottom:has(#TabBTN2:checked) > div > ul > li:not(:has(#TabBTN2)) label,#bottom:has(#TabBTN3:checked) > div > ul > li:not(:has(#TabBTN3)) label{
+#bottom:has(#TabBTN1:checked) > div > ul > li:not(:has(#TabBTN1)) label,#bottom:has(#TabBTN2:checked) > div > ul > li:not(:has(#TabBTN2)) label,#bottom:has(#TabBTN3:checked) > div > ul > li:not(:has(#TabBTN3)) label, #bottom:has(#TabBTN4:checked) > div > ul > li:not(:has(#TabBTN4)) label{
     pointer-events: none;
     user-select: none;
     transition-delay: 0ms;
@@ -202,12 +204,12 @@ gap: 20px;
     overflow: hidden;
 }
 
-#bottom:has(#TabBTN1:checked) #Tab1 .CardArea,#bottom:has(#TabBTN2:checked) #Tab2 .CardArea,#bottom:has(#TabBTN3:checked) #Tab3 .CardArea{
+#bottom:has(#TabBTN1:checked) #Tab1 .CardArea,#bottom:has(#TabBTN2:checked) #Tab2 .CardArea,#bottom:has(#TabBTN3:checked) #Tab3 .CardArea,#bottom:has(#TabBTN4:checked) #Tab4 .CardArea{
     overflow: auto;
     animation: hide-scroll 200ms backwards;
     
 }
-#bottom:has(#TabBTN1:checked) #Tab1 *,#bottom:has(#TabBTN2:checked) #Tab2 *,#bottom:has(#TabBTN3:checked) #Tab3 *{
+#bottom:has(#TabBTN1:checked) #Tab1 *,#bottom:has(#TabBTN2:checked) #Tab2 *,#bottom:has(#TabBTN3:checked) #Tab3 *,#bottom:has(#TabBTN4:checked) #Tab4 *{
     opacity: 1;
 }
 
@@ -232,6 +234,7 @@ gap: 20px;
     }
     #bottom:has(#TabBTN1:checked) > div > ul > li:not(:has(#TabBTN1)), #bottom:has(#TabBTN2:checked) > div > ul > li:not(:has(#TabBTN2)), #bottom:has(#TabBTN3:checked) > div > ul > li:not(:has(#TabBTN3)), #bottom:has(#TabBTN4:checked) > div > ul > li:not(:has(#TabBTN4)){
         width: 0;
+        height: 0;
     }
     footer:has(#bottom li input:checked) > div:not(#bottom){
         filter: blur(18px);
