@@ -12,6 +12,7 @@
   --side-txt:#393939;
   --normal-inimation-speed:200ms;
   --long-inimation-speed:500ms;
+  --page-max-width:1000px;
 }
 /* @media (prefers-color-scheme: dark) {
   :root{
@@ -65,7 +66,7 @@ a{
 }
 
 .row{
-  max-width: 1000px;
+  max-width: var(--page-max-width);
 }
 
 .warning-note{display: flow-root;position:relative;padding:20px 30px 20px 50px;    -webkit-box-shadow: 1px 2px 10px 0px rgb(0 0 0 / 15%);

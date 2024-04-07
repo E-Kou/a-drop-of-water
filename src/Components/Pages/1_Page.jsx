@@ -7,6 +7,7 @@ import logo from '../../assets/logo.webp';
 import {motion} from "framer-motion";
 
 export default function Pages() {
+  window.scrollTo(0, 0);
     if (useLocation().pathname != '/pages' && useLocation().pathname != '/parts-of-study'){
       let pagefound = false;
       return <>{PagesContent.map((article) => {
