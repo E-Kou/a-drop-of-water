@@ -112,6 +112,11 @@ nav.mainNav ul.mainNav li a:not(:has(img)){
     flex-direction: column;
     gap: var(--bar-gap);
     width: var(--bar-width);
+    cursor: pointer;
+    transition: opacity 100ms;
+  }
+  nav.mainNav .MobileSideBar:hover{
+    opacity: 0.7;
   }
   
   nav.mainNav .MobileSideBar::after,
