@@ -13,13 +13,12 @@ export default function Pages() {
       return <>{PagesContent.map((article) => {
         if ('/pages/' + article.path == useLocation().pathname){
           pagefound = true;
+          document.title = article.title + ' | Μια σταγόνα μια ζωή';
         return(
-
        <> 
-       <title>{article.title + ' | Μια σταγόνα μια ζωή'}</title> 
        <div className='pageTop'>
-       <div className='pagePanel'>{article.panel}</div>
-       <div className='pageInfo'><h1>{article.title}</h1></div>
+       <motion.div initial={{translateY:'-150px'}} animate={{translateY:0}} className='pagePanel'>{article.panel}</motion.div>
+       <motion.div initial={{translateY:100,opacity:0}} whileInView={{translateY:0,opacity:1}} transition={{duration:1, ease:'anticipate', delay:0.4}} className='pageInfo'><div className='creditInfo'>{article.panelSrc}</div><h1>{article.title}</h1></motion.div>
        </div>
         <div className='pageArticle row'>
           {article.content}

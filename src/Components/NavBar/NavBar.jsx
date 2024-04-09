@@ -9,7 +9,11 @@ import { useState, useEffect } from "react";
 
 const AllLinks = [
   {no: 1, name:'Τμήματα εργασίας', to:"/pages"},
-  {no: 2, name:'Σχετικά με εμάς', to:"/about-us"},
+  {no: 2, name:<i class="fa-solid fa-clipboard-question" aria-hidden="true"/>, to:"/pages/research-question"},
+  {no: 3, name:<i class="fa-solid fa-file" aria-hidden="true"/>, to:"/pages/summary"},
+  {no: 4, name:<i class="fa-solid fa-square-poll-vertical" aria-hidden="true"/>, to:"/pages/results"},
+  {no: 5, name:<i class="fa-solid fa-list" aria-hidden="true"/>, to:"/pages/actions"},
+
 ];
 
 
@@ -82,7 +86,7 @@ function NavBar(){
       <>
 <nav className="mainNav">
       <MobileDesktopNavBar Width={screenWidth} setButton={setNavBarRevealBTN} Button={NavBarRevealBTN} />
-      <div id="right">{useLocation().pathname == '/sign-in' ? (<NavLink className="blueButton" to="/sign-up">Εγγραφή</NavLink >) : (<NavLink className="blueButton" to="/sign-in">Σύνδεση</NavLink >)}</div>
+      <div id="right">{useLocation().pathname != '/pages' && (<NavLink className="blueButton" to="/pages">Εργασία</NavLink >)}</div>
     </nav>
     <MobileSideBar setButton={setNavBarRevealBTN} Width={screenWidth} />
 </>

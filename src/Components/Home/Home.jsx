@@ -33,22 +33,22 @@ function Home(){
 <div>
     <h2>Ερευνητικό Ερώτημα</h2>
     <p>Δημιουρήσαμε την εργασία μας με το ακόλουθο ερώτημα στο κέντρο:...</p>
-    <div><Link to='/pages/research-question' className="secondaryButton">Περισσότερα</Link></div>
+    <div><Link to='/pages/research-question' className="secondaryButton">Μάθετε Περισσότερα</Link></div>
 </div>
 <div>
     <h2>Πέριληψη Έργου</h2>
     <p>Στην εργασία μας αναλύσαμε τα μετεωρολογικά δεδομένα που συλλέξαμε απο τις σελίδες...</p>
-    <div><button className="secondaryButton">Μάθετε Περισσότερα</button></div>
+    <div><Link to='/pages/summary' className="secondaryButton">Μάθετε Περισσότερα</Link></div>
 </div>
 <div>
     <h2>Κύρια αποτελέσματα και συμπεράσματα</h2>
     <p>Συμπεραίνοντας...</p>
-    <div><button className="secondaryButton">Μάθετε περισσότερα</button></div>
+    <div><Link to='/pages/results' className="secondaryButton">Μάθετε Περισσότερα</Link></div>
 </div>
 <div>
     <h2>Δράσεις για περιορισμό του προβλήματος</h2>
-    <p>Συμπεραίνοντας...</p>
-    <div><button className="secondaryButton">Μάθετε περισσότερα</button></div>
+    <p>Σχετικές λύσεις που προτάθηκαν στην μελέτη των GIB και WWFᴳᴿ με χρηματοδότηση από την Ευρωπαϊκή Τράπεζα Επενδύσεων...</p>
+    <div><Link to='/pages/actions' className="secondaryButton">Μάθετε Περισσότερα</Link></div>
 </div>
         </div>
         </>
