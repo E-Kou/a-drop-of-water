@@ -9,6 +9,7 @@ nav.mainNav {
     background: var(--semi-transparent-bg);
     justify-content: space-between;
     border-bottom: 1.5px solid #0000001f;
+    min-height: 55px;
   }
 nav.mainNav, nav.mainNav ul.mainNav {
   list-style: none;
@@ -193,6 +194,13 @@ nav.mainNav ul.mainNav li a:not(:has(img)){
     padding: 5px;
     font-size: 1.7rem;
     outline: none;
+  }
+  aside#NavSidebar #LinkBar li:has(a .smallLink){
+   margin: 0 10px  
+  }
+  aside#NavSidebar #LinkBar li a:has( .smallLink){
+    font-size: 1.4rem;
+    color: #313131;
   }
 
   aside#NavSidebar nav img{

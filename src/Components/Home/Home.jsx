@@ -6,20 +6,23 @@ import owl from '../../assets/ehl.webp';
 import {motion} from "framer-motion";
 
 function Home(){
+    document.title = 'Μια σταγόνα μια ζωή';
+    window.scrollTo(0, 0);
     return(
         <>
         <div id="Hero">
 <motion.div initial={{translateY:100,opacity:0}} whileInView={{translateY:0,opacity:1}} transition={{duration:1, ease:'anticipate', delay:1}} id="left">
             <h1>Μια σταγόνα, μια ζωή</h1>
-            <p>Εδω, στην Θεσσαλία, πριν μερικούς μήνες μια τεράστρια πλυμμήρα προκάλεσε απίστευτες καταστροφές σε καλλιεργήσιμες εκτάσεις, οικίες...</p>
+            <p></p>
 {/* <img id="TextLogo" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEihLykdCiUgOTDOdKihwIkRizjwFHqB2VUDMgRv_zXeXHTVyI8C2DpZd_Y1f5kPSC9rexyxF_fIHoVonZTo1Jyu_WYJfxJY1UxiL3xV0Lbly1Wk_TjyR4PpwXd9YNu4l4fhM_2Kxdo9TeK_2qYHAMUTgcm2h-Vuq6SZWqU00zvXFpw84FsBQE4SG8m9pUGS/s1600/%CE%A4%CE%A1%CE%91%CE%A0%CE%95%CE%96%CE%91%CE%91%CE%A0%CE%9F%CE%A4%CE%91%CE%9C%CE%99%CE%95%CE%A5%CE%A3%CE%97%CE%A3%20horizontal.png"/> */}
-<div><Link className="blueButton">Σχετικά με το έργο</Link></div>
+<div><Link to='/pages/about' className="blueButton">Σχετικά με το έργο</Link></div>
 </motion.div>
         <div id="imgWrapper"><motion.img initial={{filter:'brightness(1.35)', opacity:0, scale:3}} animate={{scale:1, opacity:1, filter:'brightness(1)'}} transition={{duration:1, ease:'anticipate'}} id="HeroImg" alt="Η πλυμμηρισμένη εικόνα της Θεσσαλίας." src={bannerImg}/>
         </div>
         </div>
+        <div style={{padding: '25px 0', overflow: 'hidden', maxWidth: '100%'}}>
         <motion.div initial={{scaleY:0}} animate={{scaleY:1}} transition={{delay:2.2, stiffness:150, type:'spring', damping: 9}} className="Banner row">
-            <Link to="/about-us">
+            <Link to="/pages/about">
             <div>
             <h2>Αυτό το έργο δημιουργήθηκε από το:</h2>
             <div id="BannerInfo">
@@ -29,6 +32,7 @@ function Home(){
             <img src={owl}/>
             </Link>
         </motion.div>
+        </div>
         <div className="row InfoCards">
 <div>
     <h2>Ερευνητικό Ερώτημα</h2>

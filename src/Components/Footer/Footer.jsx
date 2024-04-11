@@ -17,10 +17,6 @@ function Footer(props){
                 <p>Καλωσήρθατε στην ιστοσελίδα της εργασίας «Μια στραγόνα, μια ζωή» του Ομίλου Μετεωρολογίας - Αστρονομίας του 1ου Πειραματικού Γυμνασίου Λάρισας στα πλαίσα του προγράμματος <a href='https://climatedetectives.esa.int/'>Climate Detectives</a>.</p>
             </div>
             <div>
-                <h2>Δοκιμή</h2>
-                <p>Καλησπέρα κόσμε@</p>
-            </div>
-            <div>
       <h2>Σελίδες εργασίας</h2>
       <ul id='pageLinks'>
     {PublicPageList.map((page)=> <li key={page.no}><Link to={page.path}>{page.name}</Link></li>)}
@@ -46,10 +42,12 @@ function Footer(props){
 
                 <div id='Tab3' className="CardContents">
                     <div className='CardArea'>
+                        <p style={{padding:10}}>
+                            Το αρχαιότερο σχολείο Δευτεροβάθμιας εκπαίδευσης στην Λάρισα. Ένα σχολείο που διδάσκει στους μαθητές του την χαρά της Μάθησης.</p>
                     <ul>
-                        <li><a href='https://www.facebook.com/profile.php?id=100064293242239'><i className="fa-brands fa-facebook"></i> Facebook</a></li>
-                        <li><a href='https://www.youtube.com/@1o_gym_larisas/videos'><i className="fab fa-youtube"></i> Youtube</a></li>
-                        <li><a href='https://ehl.gr/'><i className="fa-solid fa-globe"></i> Website</a></li>
+                        <li><Link target='_blank' to='https://www.facebook.com/profile.php?id=100064293242239'><i className="fa-brands fa-facebook"></i> Facebook</Link></li>
+                        <li><Link target='_blank' to='https://www.youtube.com/@1o_gym_larisas/videos'><i className="fab fa-youtube"></i> Youtube</Link></li>
+                        <li><Link target='_blank' to='https://ehl.gr/'><i className="fa-solid fa-globe"></i> Website</Link></li>
                     </ul>
                     </div>
                 </div>
@@ -67,6 +65,9 @@ function Footer(props){
                     <ul>
                         <li>Βασίλειος Τουρναβίτης</li>
                     </ul>
+                    </div>
+                    <div>
+                    <Link to='/pages/about' style={{marginTop:10}} className='blueButton'>Σχετικά με εμάς</Link >
                     </div>
                     </div>
                 </div>

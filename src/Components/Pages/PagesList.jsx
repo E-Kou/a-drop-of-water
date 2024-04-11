@@ -17,6 +17,7 @@ import { Bar, Doughnut, Line } from 'react-chartjs-2';
 
 import boukefalas from "../../assets/boukefalas.webp"
 import agalmaBoukefalas from "../../assets/agalma_boukefalas.webp"
+import Daniel from "../../assets/daniel.webp"
 import schFront from "../../assets/sch.webp"
 import tc1 from "../../assets/tc1.webp"
 import tc2 from "../../assets/tc2.webp"
@@ -86,8 +87,13 @@ function ResultsPanel() {
 }
 
 export const PagesContent = [
-  {
-    title: 'Περίληψη έργου',
+  {title:'Σχετικά με εμάς',
+  path:'about',
+  panel: <img className='imgHero' src={schFront}/>,
+  panelSrc: <p>Εικόνα: <a target='_blank' href='https://ehl.gr'>Το σχολείο μας</a></p>,
+
+},
+  {title: 'Περίληψη έργου',
     path: 'summary',
     panel: <video autoPlay muted>
       <source src='https://gpm.nasa.gov/sites/default/files/2023-09/Daniel_20230907_2330UTC.mp4' type='video/mp4' />
@@ -100,11 +106,12 @@ export const PagesContent = [
           Η Κακοκαιρία Daniel ήταν μία μεγάλη φυσική καταστροφή η οποία έλαβε χώρα περίπου στο πρώτο μισό του Σεπτεμβρίου του 2023 (3-12 Σεπτεμβρίου). Η κακοκαιρία αυτή εκδηλώθηκε μέσω ισχυρών βροχοπτώσεων οι οποίες με τη σειρά τους προκάλεσαν πλημμύρες μεγάλης κλίμακας. Οι πλημμύρες αυτές αποτέλεσαν κάτι πολύ σοβαρό για την περιοχή της Θεσσαλίας καθώς προκλήθηκαν υλικές ζημιές και απώλειες κτηνοτροφικών ζώων και ακόμη και ανθρώπων λόγω της υπερχείλισης του ποταμού Πηνειού και των παραποτάμων του.
         </p>
         <p className='default'>
-          Οι μαθητές της Γ’ Γυμνασίου του 1ου Πειραματικού Γυμνασίου Λάρισας έσπευσαν να αναλύσουν πως εκδηλώθηκαν οι πλημμύρες αλλά και τον αντίκτυπο του στην περιοχή. Χρησιμοποιήθηκαν στοιχεία διασταυρωμένα από ποικίλες πηγές όπως: η Meteo και η ΕΜΥ για την εξέλιξη των πλημμυρών, άρθρο των Financial Times για τις συνέπειές τους και άλλα. Πριν όμως από αυτό, ας αναφέρουμε λίγα λόγια για την γεωγραφία καθώς και για την ιστορία της Θεσσαλίας.
+          Οι μαθητές της Γ’ Γυμνασίου του 1ου Πειραματικού Γυμνασίου Λάρισας έσπευσαν να αναλύσουν πως εκδηλώθηκαν οι πλημμύρες αλλά και τον αντίκτυπο του στην περιοχή. Χρησιμοποιήθηκαν στοιχεία διασταυρωμένα από ποικίλες πηγές όπως: η Meteo και η ΕΜΥ για την εξέλιξη των πλημμυρών, άρθρο των Financial Times για τις συνέπειές τους και άλλα.
         </p>
+        <h3>Σχετικά με την Θεσσαλία </h3>
         <p style={{ marginBottom: 50 }} className='default'>
           Η Θεσσαλία είναι ένα γεωγραφικό διαμέρισμα στην κεντρική περίπου Ελλάδα, βόρεια της οποίας βρίσκεται η Μακεδονία, νότια της η Στερεά Ελλάδα και δυτικά της η Ήπειρος ενώ στα ανατολικά της βρέχεται από το Αιγαίο Πέλαγος. Οι κύριες πόλεις της Θεσσαλίας είναι η Λάρισα, ο Βόλος, τα Τρίκαλα και η Καρδίτσα. Σύμφωνα με την απογραφή του 2011 η Θεσσαλία αριθμεί 732.762 κατοίκους. Η έκτασή της ανέρχεται στα 14.036 χλμ². Η Θεσσαλία επίσης είναι γνωστή για την μεγάλη πεδιάδα της, τον Θεσσαλικό Κάμπο, από τον οποίο περνά ο Πηνειός ποταμός, ο τρίτος μεγαλύτερος ποταμός της Ελλάδας (μήκος: 205 χλμ.) καθώς και για το διάσημο βουνό Όλυμπο το οποίο βρίσκεται στα όρια της με την Μακεδονία.
-          <Link to='/pages/thessaly' style={{ display: 'inline-block', float: 'right' }} className='blueButton'>Μάθετε περισσότερα</Link >
+          <Link to='/pages/thessaly' style={{ display: 'inline-block', float: 'right' }} className='blueButton'>Περισσότερα για την Θεσσαλία</Link >
         </p>
 
 
@@ -112,13 +119,94 @@ export const PagesContent = [
           <p>Αυτή η εργασία έχει σκοπό να αναλύσει τον άμεσο αντίκτιπο και το μέγεθος της κακοκαιρίας Daniel στη Θεσσαλία και όχι να αναλύσει θεωρίες κλιματικής αλλαγής. Για κάτι τέτοιο απαιτούνται δεδομένα το ελάχιστο 16 ετών κατόπιν συμβάντος.</p></div>
       </>
   },
-  {
-    title: "Κύρια αποτελέσματα και συμπεράσματα",
+  {title: "Κύρια αποτελέσματα και συμπεράσματα",
     path: "results",
     panel: <ResultsPanel />,
     panelSrc: <p>Πηγή χαρτών: <a target='_blank' href='https://apps.sentinel-hub.com/eo-browser/?zoom=10&lat=39.57606&lng=22.22122&themeId=DEFAULT-THEME&visualizationUrl=https%3A%2F%2Fservices.sentinel-hub.com%2Fogc%2Fwms%2Fbd86bcc0-f318-402b-a145-015f85b9427e&datasetId=S2L2A&fromTime=2023-09-10T00%3A00%3A00.000Z&toTime=2023-09-10T23%3A59%3A59.999Z&layerId=6-SWIR&demSource3D=%22MAPZEN%22'>EO Browser</a></p>,
     content: <>
-      <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/8lPl7FJBzZI?si=yNFsEyI8hyNIHf41&amp;start=26" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <p>
+    Οι επιπτώσεις των πλημμυρών λόγω της κακοκαιρίας Daniel στον Θεσσαλικό χώρο, η οποία διήρκησε περίπου 5 ημέρες (4-8/9/2023), ήταν πάρα πολύ σοβαρές και επιζήμιες τόσο για την τοπική όσο και για την εθνική οικονομία της χώρας. Το μέγεθος της κακοκαιρίας ήταν τόσο μεγάλο, που σύμφωνα με το <a href="https://www.cnn.gr/ellada/longform/382874/apo-tis-foties-ston-daniel-i-katastrofi-se-arithmoys-infographic" target='_blank'>CNNᴳᴿ</a> καταστράφηκαν 750.000 στρέμματα καλλιεργειών, ενώ συντρίφτηκε «ρεκόρ» βροχόπτωσης με <a href='https://www.meteo.gr/article_view.cfm?entryID=2913' target='_blank'>754mm μέσα σε μόλις 21 ώρες</a> στην Ζαγορά Πήλιου. Πρόκειται για ένα νούμερο εξωφρενικό ειδικότερα όταν το συγκρίνουμε με τη μέση ετήσια βροχόπτωση της Αθήνας, η οποία είναι 400mm. 
+    </p>
+    <h4>Ορισμένες από τις επιπτώσεις της πλημμύρας είναι:</h4>
+    <ul>
+      <li>απώλεια 80.000 κατσικιών και προβάτων.</li>
+      <li>δυσκολία επιβίωσης των ζώων λόγω πλημμυρισμένων εκτάσεων και αδυναμίας εύρεσης ζωοτροφής.</li>
+    <li>πλημμύρα και μακροχρόνια αχρήστευση του ¼ του καλλιεργήσιμου εδάφους της Θεσσαλίας καθώς και καταστροφή αρκετών υποδομών.</li>
+    <li>συνολική ζημιά που ανέρχεται στα εκατομμύρια και είναι τριπλάσια από την κακοκαιρία «Ιανό».</li>
+    </ul>
+    <div>
+          <Bar
+            data={{
+              labels: ['Μέσο ύψος υετού μήνα Σεπτεμβρίου','Σεπτεμβριος 2023'],
+              datasets: [
+                {
+                  label: 'Υετός (mm)',
+                  data: [53.7, 200],
+                  backgroundColor: [
+                    'blue',
+                    'red',
+                  ]
+                },
+              ]
+            }} options={{indexAxis:'y', responsive:true,
+          scales:{
+            x:{
+              display:true,
+              title:{
+                display:true,
+                text:'Υετός (mm)'
+              }
+            }
+          },
+          plugins: {
+            legend:false,
+            title: {
+                display: true,
+                text: 'Yψος βροχόπτωσης λόγω κακοκαιρίας daniel στην Λάρισα',
+                font:{
+                  size:15
+                }
+            }
+        }
+          }}
+          />
+                    <Bar
+            data={{
+              labels: ['Μέσο ύψος υετού μήνα Σεπτεμβρίου','Σεπτεμβριος 2023'],
+              datasets: [
+                {
+                  label: 'Θερμοκρασία',
+                  data: [38.5, 448],
+                  backgroundColor: [
+                    '#1a45d0',
+                    '#d01a1a',
+                  ]
+                },
+              ]
+            }} options={{indexAxis:'y', responsive:true,
+          scales:{
+            x:{
+              display:true,
+              title:{
+                display:true,
+                text:'Υετός (mm)'
+              }
+            }
+          },
+          plugins: {
+            legend:false,
+            title: {
+                display: true,
+                text: 'Yψος βροχόπτωσης λόγω κακοκαιρίας daniel στην Αγχίαλο',
+                font:{
+                  size:15
+                }
+            }
+        }
+          }}
+          />
+          </div>
+      <iframe style={{margin:'50px auto'}} width="560" height="315" src="https://www.youtube-nocookie.com/embed/8lPl7FJBzZI?si=yNFsEyI8hyNIHf41&amp;start=26" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </>
   },
   {
@@ -137,8 +225,7 @@ export const PagesContent = [
   {
     title: "Ερευνητικό ερώτημα",
     path: "research-question",
-    panel: <img className='imgHero' src={schFront} />,
-    panelSrc: <p><a target='_blank' href='https://ehl.gr'>Το σχολείο μας</a></p>,
+    panel: <img className='imgHero' src={Daniel} />,
     content: <div><p style={{ fontSize: '1.25rem', marginBottom: 15 }}>Η ομάδα μας, αποτελούμενη από τον Άγγελο Γεωργίου και Ευάγγελο Κουτσογιάννη, μαθητές του 1ου Πειραματικού Γυμνασίου Λάρισας, επέλεξε ως κεντρικό ερευνητικό ερώτημα της εγασίας μας είναι το εξής:</p>
       <div id='theQuestion'>Πώς επηρέασε τη Θεσσαλία η κακοκαιρία Daniel;</div>
     </div>

@@ -20,9 +20,9 @@ export default function Pages() {
        <motion.div initial={{translateY:'-150px'}} animate={{translateY:0}} className='pagePanel'>{article.panel}</motion.div>
        <motion.div initial={{translateY:100,opacity:0}} whileInView={{translateY:0,opacity:1}} transition={{duration:1, ease:'anticipate', delay:0.4}} className='pageInfo'><div className='creditInfo'>{article.panelSrc}</div><h1>{article.title}</h1></motion.div>
        </div>
-        <div className='pageArticle row'>
+        <motion.div className='pageArticle row' initial={{clipPath: 'inset(0 0 100%)'}} animate={{clipPath: 'inset(0)'}} transition={{duration:1, delay:1.1}}>
           {article.content}
-          </div>
+          </motion.div>
         </>
         )
         }
@@ -31,6 +31,7 @@ export default function Pages() {
         </>
     }
     else {
+      document.title = 'Σελίδες εργασίας | Μια σταγόνα μια ζωή';
       return(
       <div className='pageList row'>
       <motion.img initial={{rotate:-100, opacity:0}} animate={{rotate:0, opacity:1}} src={logo} />
