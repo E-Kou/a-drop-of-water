@@ -218,7 +218,7 @@ export const PagesContent = [
         <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/8lPl7FJBzZI?si=yNFsEyI8hyNIHf41&amp;start=26" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       </div>
       <iframe style={{ borderRadius: 10 }} width="100%" height="900" frameborder="0" src="https://onedrive.live.com/embed?resid=9929E4ADFB90BE21%215459&authkey=%21AIBTK8VEnNMl7vU&em=2&wdAllowInteractivity=False&ActiveCell='%CE%A6%CF%8D%CE%BB%CE%BB%CE%BF1'!A117&Item='%CE%A6%CF%8D%CE%BB%CE%BB%CE%BF1'!A1%3AN181&wdHideGridlines=True&wdDownloadButton=True&wdInConfigurator=True&wdInConfigurator=True"></iframe>
-      <a style={{ textDecoration: 'none' }} href='https://www.mediafire.com/file/m2xqatbzqmpmmhh' target='_blank'><div className='imgBox'><img className='svg' src={excel} /><p>excel-A-drop-of-water-a-life.xlsx</p>Λήψη</div></a>
+      <a style={{ textDecoration: 'none' }} href='https://www.mediafire.com/file/m2xqatbzqmpmmhh' target='_blank'><div className='imgBox download'><img src={excel} /><p>excel-A-drop-of-water-a-life.xlsx</p>Λήψη</div></a>
     </>
   },
   {
@@ -234,69 +234,18 @@ export const PagesContent = [
         <div><div className='imgBox'><img src={boukefalas} /><p>Ο Μέγας Αλέξανδρος δαμάζει τον βουκεφάλα, άλογο θεσσαλικής καταγωγής, από μικρή ηλικία.</p></div><div className='imgBox'><img src={agalmaBoukefalas} /><p>Άγαμλα του Βουκεφάλα μπροσά από την εκκλησία Αγίου Αχιλλίου, Λάρισα.</p></div></div>
       </>
   },
-  {
-    title: "Ερευνητικό ερώτημα",
+  {title: "Ερευνητικό ερώτημα",
     path: "research-question",
     panel: <img className='imgHero' src={Daniel} />,
     content: <div><p style={{ fontSize: '1.25rem', marginBottom: 15 }}>Η ομάδα μας, αποτελούμενη από τον Άγγελο Γεωργίου και Ευάγγελο Κουτσογιάννη, μαθητές του 1ου Πειραματικού Γυμνασίου Λάρισας, επέλεξε ως κεντρικό ερευνητικό ερώτημα της εγασίας μας είναι το εξής:</p>
       <div id='theQuestion'>Πώς επηρέασε τη Θεσσαλία η κακοκαιρία Daniel;</div>
     </div>
   },
-  {
-    title: "Γραφήματα",
-    path: "charts",
-    content:
-      <div className='pageContent'>
-        <div className='graph'>
-          <Bar
-            data={{
-              labels: [2020, 2021, 2022, 2024],
-              datasets: [
-                {
-                  label: 'Θερμοκρασία',
-                  data: [20, 21, 21.5, 23],
-                  backgroundColor: [
-                    'grey',
-                    'red',
-                    'blue',
-                    'black'
-                  ]
-                },
-              ]
-            }}
-          />
-          <Doughnut
-            data={{
-              labels: [2020, 2021, 2022, 2024],
-              datasets: [
-                {
-                  label: 'Θερμοκρασία',
-                  data: [20, 21, 21.5, 23],
-                  backgroundColor: [
-                    'grey',
-                    'red',
-                    'blue',
-                    'black'
-                  ]
-                },
-              ]
-            }}
-          />
-          <Line
-            data={{
-              background: 'blue',
-              labels: [2020, 2021, 2022, 2024],
-              datasets: [
-                {
-                  label: 'Θερμοκρασία',
-                  borderColor: 'pink',
-                  data: [20, 21, 21.5, 23],
-                  backgroundColor: 'purple',
-                },
-              ]
-            }}
-          />
-        </div>
-      </div>
-  }
-]
+  {title: "Δράσεις για περιορισμό του προβλήματος",
+    path: "actions",
+    content: <>
+    <p>Είναι προφανές πως τέτοιου είδους πλημμύρες αποτελούν κρίσιμο πρόβλημα τόσο για την τοπική οικονομία όσο και για την ζωή των κατοίκων. </p>
+    <p>Σχετικές λύσεις που προτάθηκαν στην μελέτη των GIB και WWFᴳᴿ με χρηματοδότηση από την Ευρωπαϊκή Τράπεζα Επενδύσεων συστήνουν χρήση φυσικών λύσεων. «Δουλεύοντας με τη φύση, όχι εναντίον της» αναφέρεται χαρακτηριστικά. </p>
+    </>
+  },
+  ]
