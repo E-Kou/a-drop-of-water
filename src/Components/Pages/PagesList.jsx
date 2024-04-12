@@ -26,6 +26,7 @@ import swir2 from "../../assets/swir2.webp"
 import ndsi1 from "../../assets/ndsi1.webp"
 import ndsi2 from "../../assets/ndsi2.webp"
 import thessaly from "../../assets/thessaly.webp"
+import excel from '../../assets/excel.svg'
 
 
 import { ImgComparisonSlider } from '@img-comparison-slider/react';
@@ -87,13 +88,15 @@ function ResultsPanel() {
 }
 
 export const PagesContent = [
-  {title:'Σχετικά με εμάς',
-  path:'about',
-  panel: <img className='imgHero' src={schFront}/>,
-  panelSrc: <p>Εικόνα: <a target='_blank' href='https://ehl.gr'>Το σχολείο μας</a></p>,
+  {
+    title: 'Σχετικά με εμάς',
+    path: 'about',
+    panel: <img className='imgHero' src={schFront} />,
+    panelSrc: <p>Εικόνα: <a target='_blank' href='https://ehl.gr'>Το σχολείο μας</a></p>,
 
-},
-  {title: 'Περίληψη έργου',
+  },
+  {
+    title: 'Περίληψη έργου',
     path: 'summary',
     panel: <video autoPlay muted>
       <source src='https://gpm.nasa.gov/sites/default/files/2023-09/Daniel_20230907_2330UTC.mp4' type='video/mp4' />
@@ -119,94 +122,103 @@ export const PagesContent = [
           <p>Αυτή η εργασία έχει σκοπό να αναλύσει τον άμεσο αντίκτιπο και το μέγεθος της κακοκαιρίας Daniel στη Θεσσαλία και όχι να αναλύσει θεωρίες κλιματικής αλλαγής. Για κάτι τέτοιο απαιτούνται δεδομένα το ελάχιστο 16 ετών κατόπιν συμβάντος.</p></div>
       </>
   },
-  {title: "Κύρια αποτελέσματα και συμπεράσματα",
+  {
+    title: "Κύρια αποτελέσματα και συμπεράσματα",
     path: "results",
     panel: <ResultsPanel />,
     panelSrc: <p>Πηγή χαρτών: <a target='_blank' href='https://apps.sentinel-hub.com/eo-browser/?zoom=10&lat=39.57606&lng=22.22122&themeId=DEFAULT-THEME&visualizationUrl=https%3A%2F%2Fservices.sentinel-hub.com%2Fogc%2Fwms%2Fbd86bcc0-f318-402b-a145-015f85b9427e&datasetId=S2L2A&fromTime=2023-09-10T00%3A00%3A00.000Z&toTime=2023-09-10T23%3A59%3A59.999Z&layerId=6-SWIR&demSource3D=%22MAPZEN%22'>EO Browser</a></p>,
     content: <>
-    <p>
-    Οι επιπτώσεις των πλημμυρών λόγω της κακοκαιρίας Daniel στον Θεσσαλικό χώρο, η οποία διήρκησε περίπου 5 ημέρες (4-8/9/2023), ήταν πάρα πολύ σοβαρές και επιζήμιες τόσο για την τοπική όσο και για την εθνική οικονομία της χώρας. Το μέγεθος της κακοκαιρίας ήταν τόσο μεγάλο, που σύμφωνα με το <a href="https://www.cnn.gr/ellada/longform/382874/apo-tis-foties-ston-daniel-i-katastrofi-se-arithmoys-infographic" target='_blank'>CNNᴳᴿ</a> καταστράφηκαν 750.000 στρέμματα καλλιεργειών, ενώ συντρίφτηκε «ρεκόρ» βροχόπτωσης με <a href='https://www.meteo.gr/article_view.cfm?entryID=2913' target='_blank'>754mm μέσα σε μόλις 21 ώρες</a> στην Ζαγορά Πήλιου. Πρόκειται για ένα νούμερο εξωφρενικό ειδικότερα όταν το συγκρίνουμε με τη μέση ετήσια βροχόπτωση της Αθήνας, η οποία είναι 400mm. 
-    </p>
-    <h4>Ορισμένες από τις επιπτώσεις της πλημμύρας είναι:</h4>
-    <ul>
-      <li>απώλεια 80.000 κατσικιών και προβάτων.</li>
-      <li>δυσκολία επιβίωσης των ζώων λόγω πλημμυρισμένων εκτάσεων και αδυναμίας εύρεσης ζωοτροφής.</li>
-    <li>πλημμύρα και μακροχρόνια αχρήστευση του ¼ του καλλιεργήσιμου εδάφους της Θεσσαλίας καθώς και καταστροφή αρκετών υποδομών.</li>
-    <li>συνολική ζημιά που ανέρχεται στα εκατομμύρια και είναι τριπλάσια από την κακοκαιρία «Ιανό».</li>
-    </ul>
-    <div>
-          <Bar
-            data={{
-              labels: ['Μέσο ύψος υετού μήνα Σεπτεμβρίου','Σεπτεμβριος 2023'],
-              datasets: [
-                {
-                  label: 'Υετός (mm)',
-                  data: [53.7, 200],
-                  backgroundColor: [
-                    'blue',
-                    'red',
-                  ]
-                },
-              ]
-            }} options={{indexAxis:'y', responsive:true,
-          scales:{
-            x:{
-              display:true,
-              title:{
-                display:true,
-                text:'Υετός (mm)'
+      <p>
+        Οι επιπτώσεις των πλημμυρών λόγω της κακοκαιρίας Daniel στον Θεσσαλικό χώρο, η οποία διήρκησε περίπου 5 ημέρες (4-8/9/2023), ήταν πάρα πολύ σοβαρές και επιζήμιες τόσο για την τοπική όσο και για την εθνική οικονομία της χώρας. Το μέγεθος της κακοκαιρίας ήταν τόσο μεγάλο, που σύμφωνα με το <a href="https://www.cnn.gr/ellada/longform/382874/apo-tis-foties-ston-daniel-i-katastrofi-se-arithmoys-infographic" target='_blank'>CNNᴳᴿ</a> καταστράφηκαν 750.000 στρέμματα καλλιεργειών, ενώ συντρίφτηκε «ρεκόρ» βροχόπτωσης με <a href='https://www.meteo.gr/article_view.cfm?entryID=2913' target='_blank'>754mm μέσα σε μόλις 21 ώρες</a> στην Ζαγορά Πήλιου. Πρόκειται για ένα νούμερο εξωφρενικό ειδικότερα όταν το συγκρίνουμε με τη μέση ετήσια βροχόπτωση της Αθήνας, η οποία είναι 400mm.
+      </p>
+      <h4>Ορισμένες από τις επιπτώσεις της πλημμύρας είναι:</h4>
+      <ul>
+        <li>απώλεια 80.000 κατσικιών και προβάτων.</li>
+        <li>δυσκολία επιβίωσης των ζώων λόγω πλημμυρισμένων εκτάσεων και αδυναμίας εύρεσης ζωοτροφής.</li>
+        <li>πλημμύρα και μακροχρόνια αχρήστευση του ¼ του καλλιεργήσιμου εδάφους της Θεσσαλίας καθώς και καταστροφή αρκετών υποδομών.</li>
+        <li>συνολική ζημιά που ανέρχεται στα εκατομμύρια και είναι τριπλάσια από την κακοκαιρία «Ιανό».</li>
+      </ul>
+      <p>Όπως είναι προφανές και από χάρτες στο πάνω μέρος της σελίδας, η απερίγραπτη ποσότητα νερού που <Link target='_blank' to='https://el.wiktionary.org/wiki/%E1%BD%95%CF%89#%CE%91%CF%81%CF%87%CE%B1%CE%AF%CE%B1_%CE%B5%CE%BB%CE%BB%CE%B7%CE%BD%CE%B9%CE%BA%CE%AC_(grc)'>ὕσθη</Link> μέχρι τις 10/09/23 (ημερομηνία χάρτη από EO Browser) κατέστεψε οικίες, χωράφια και γενικότερα ό,τι βρέθηκε στον δρόμο της.</p>
+      <div className='twoCharts'>
+        <div><Bar
+          data={{
+            labels: ['Μέσο ύψος υετού μήνα Σεπτεμβρίου', 'Σεπτεμβριος 2023'],
+            datasets: [
+              {
+                label: 'Υετός (mm)',
+                data: [53.7, 200],
+                backgroundColor: [
+                  '#1a45d0',
+                  '#d01a1a',
+                ]
+              },
+            ]
+          }} options={{
+            indexAxis: 'y', responsive: true,
+            scales: {
+              x: {
+                display: true,
+                title: {
+                  display: true,
+                  text: 'Υετός (mm)'
+                }
               }
-            }
-          },
-          plugins: {
-            legend:false,
-            title: {
+            },
+            plugins: {
+              legend: false,
+              title: {
                 display: true,
                 text: 'Yψος βροχόπτωσης λόγω κακοκαιρίας daniel στην Λάρισα',
-                font:{
-                  size:15
+                font: {
+                  size: 15
                 }
-            }
-        }
-          }}
-          />
-                    <Bar
-            data={{
-              labels: ['Μέσο ύψος υετού μήνα Σεπτεμβρίου','Σεπτεμβριος 2023'],
-              datasets: [
-                {
-                  label: 'Θερμοκρασία',
-                  data: [38.5, 448],
-                  backgroundColor: [
-                    '#1a45d0',
-                    '#d01a1a',
-                  ]
-                },
-              ]
-            }} options={{indexAxis:'y', responsive:true,
-          scales:{
-            x:{
-              display:true,
-              title:{
-                display:true,
-                text:'Υετός (mm)'
               }
             }
-          },
-          plugins: {
-            legend:false,
-            title: {
+          }}
+        /></div>
+        <div><Bar
+          data={{
+            labels: ['Μέσο ύψος υετού μήνα Σεπτεμβρίου', 'Σεπτεμβριος 2023'],
+            datasets: [
+              {
+                label: 'Θερμοκρασία',
+                data: [38.5, 448],
+                backgroundColor: [
+                  '#1a45d0',
+                  '#d01a1a',
+                ]
+              },
+            ]
+          }} options={{
+            indexAxis: 'y', responsive: true,
+            scales: {
+              x: {
+                display: true,
+                title: {
+                  display: true,
+                  text: 'Υετός (mm)'
+                }
+              }
+            },
+            plugins: {
+              legend: false,
+              title: {
                 display: true,
                 text: 'Yψος βροχόπτωσης λόγω κακοκαιρίας daniel στην Αγχίαλο',
-                font:{
-                  size:15
+                font: {
+                  size: 15
                 }
+              }
             }
-        }
           }}
-          />
-          </div>
-      <iframe style={{margin:'50px auto'}} width="560" height="315" src="https://www.youtube-nocookie.com/embed/8lPl7FJBzZI?si=yNFsEyI8hyNIHf41&amp;start=26" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        /></div>
+      </div>
+      <div className='row' style={{ margin: '0 auto', width: 'fit-content' }}>
+        <h3 style={{ width: 'fit-content' }}>Σχετικό ρεπορτάζ από Sky news</h3>
+        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/8lPl7FJBzZI?si=yNFsEyI8hyNIHf41&amp;start=26" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <iframe style={{ borderRadius: 10 }} width="100%" height="900" frameborder="0" src="https://onedrive.live.com/embed?resid=9929E4ADFB90BE21%215459&authkey=%21AIBTK8VEnNMl7vU&em=2&wdAllowInteractivity=False&ActiveCell='%CE%A6%CF%8D%CE%BB%CE%BB%CE%BF1'!A117&Item='%CE%A6%CF%8D%CE%BB%CE%BB%CE%BF1'!A1%3AN181&wdHideGridlines=True&wdDownloadButton=True&wdInConfigurator=True&wdInConfigurator=True"></iframe>
+      <a style={{ textDecoration: 'none' }} href='https://www.mediafire.com/file/m2xqatbzqmpmmhh' target='_blank'><div className='imgBox'><img className='svg' src={excel} /><p>excel-A-drop-of-water-a-life.xlsx</p>Λήψη</div></a>
     </>
   },
   {
@@ -219,7 +231,7 @@ export const PagesContent = [
         <p>
           Η Θεσσαλία αποτελούσε ένα σημαντικό μέρος της αρχαίας Ελλάδας το οποίο ήταν ιδιαίτερα συνδεδεμένο με τον υπόλοιπο ελληνικό χώρο. Μάλιστα, οι Θεσσαλοί είχαν ήδη συνειδητοποιήσει από τους αρχαίους χρόνους ότι αποτελούσαν κάτι κοινό οπότε ήταν σε στενή επαφή μεταξύ τους μέσω του Κοινού των Θεσσαλών. Αργότερα, η Θεσσαλία πέρασε στον έλεγχο των Μακεδόνων και μετά των Ρωμαίων. Ύστερα, ακολούθησε η Βυζαντινή περίοδος και μετέπειτα η οθωμανική. Η Θεσσαλία παραχωρήθηκε τελικά στο ελληνικό κράτος το 1881 και από τότε αποτελεί αναπόσπαστο κομμάτι της Ελλάδας. Ο Θεσσαλικός κάμπος μέχρι τις αρχές του 20ού αιώνα ήταν σιτοβολώνας για την Ελλάδα. Η ύπαρξη του έκανε τη Θεσσαλία μια από τις λίγες περιοχές στην Αρχαία Ελλάδα που μπορούσαν να στεγάσουν μεγάλο αριθμό ιππικού. Το θεσσαλικό ιππικό ήταν σημαντικό μέρος του αρχαίου Μακεδονικού στρατού του Φιλίππου Β' και του Μεγάλου Αλεξάνδρου.
         </p>
-        <div><div className='imgBox'><img src={boukefalas} /><p>Ο Μέγας Αλέξανδρος δαμάζει τον βουκεφάλα, άλογο θεσσαλικής καταγωγής, από μικρή ηλικία.</p></div><div className='imgBox'><img src={agalmaBoukefalas} /><p>Ο Μέγας Αλέξανδρος δαμάζει τον βουκεφάλα, άλογο θεσσαλικής καταγωγής, από μικρή ηλικία</p></div></div>
+        <div><div className='imgBox'><img src={boukefalas} /><p>Ο Μέγας Αλέξανδρος δαμάζει τον βουκεφάλα, άλογο θεσσαλικής καταγωγής, από μικρή ηλικία.</p></div><div className='imgBox'><img src={agalmaBoukefalas} /><p>Άγαμλα του Βουκεφάλα μπροσά από την εκκλησία Αγίου Αχιλλίου, Λάρισα.</p></div></div>
       </>
   },
   {
@@ -286,10 +298,5 @@ export const PagesContent = [
           />
         </div>
       </div>
-  },
-  {
-    title: 'Mario',
-    content: ' A lot of content',
-    path: 'check'
   }
 ]

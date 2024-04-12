@@ -70,6 +70,26 @@
     border-radius: 120px;
     transition: all 2s;
     margin: 0 auto;
+    animation: showPage 3s 1.5s 1 backwards;
+}
+@keyframes showPage {
+    0%{
+        clip-path: inset(0 0 100%);
+    }
+    100%{
+        clip-path: inset(0);
+    }   
+}
+.pageArticle .twoCharts{
+display: flex;
+flex-wrap: wrap;
+margin: 30px 0;
+
+}
+.pageArticle .twoCharts > div{
+width: clamp(400px, 50%, 75vw);
+max-width: 100%;
+justify-content: center;
 }
 .pageArticle iframe{
     max-width: 100%;
@@ -96,9 +116,10 @@ font-size: 1.1rem;
 }
 .pageArticle ul{
     padding: 0 20px;
+    margin: 10px 0;
 }
 
-.pageArticle div.imgBox img {
+.pageArticle div.imgBox img:not(.svg) {
     max-width: 100%;
     max-height: 20vh;
     width: auto;

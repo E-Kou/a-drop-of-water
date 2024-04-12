@@ -143,6 +143,7 @@ footer #sections #pageLinks li a{
     box-shadow: 0 -10px 20px #0272c161;
     user-select: none;
     pointer-events: none;
+    z-index: 2;
 }
 #bottom .CardContents .CardArea{
     overflow: hidden;

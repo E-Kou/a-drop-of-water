@@ -9,10 +9,10 @@ import { useState, useEffect } from "react";
 
 const AllLinks = [
   {no: 1, name:'Τμήματα εργασίας', to:"/pages"},
-  {no: 2, name:<i class="fa-solid fa-clipboard-question" aria-hidden="true"/>,size:'small', fullName:'Ερευνητικό ερώτημα', to:"/pages/research-question"},
-  {no: 3, name:<i class="fa-solid fa-file" aria-hidden="true"/>,size:'small', fullName:'Περίληψη έργου', to:"/pages/summary"},
-  {no: 4, name:<i class="fa-solid fa-square-poll-vertical" aria-hidden="true"/>,size:'small',fullName:'Κύρια αποτελέσματα και συμπεράσματα', to:"/pages/results"},
-  {no: 5, name:<i class="fa-solid fa-list" aria-hidden="true"/>,size:'small',fullName:'Δράσεις για περιορισμό του προβλήματος', to:"/pages/actions"},
+  {no: 2, name:<i className="fa-solid fa-clipboard-question" aria-hidden="true"/>,size:'small', fullName:'Ερευνητικό ερώτημα', to:"/pages/research-question"},
+  {no: 3, name:<i className="fa-solid fa-file" aria-hidden="true"/>,size:'small', fullName:'Περίληψη έργου', to:"/pages/summary"},
+  {no: 4, name:<i className="fa-solid fa-square-poll-vertical" aria-hidden="true"/>,size:'small',fullName:'Κύρια αποτελέσματα και συμπεράσματα', to:"/pages/results"},
+  {no: 5, name:<i className="fa-solid fa-list" aria-hidden="true"/>,size:'small',fullName:'Δράσεις για περιορισμό του προβλήματος', to:"/pages/actions"},
 
 ];
 

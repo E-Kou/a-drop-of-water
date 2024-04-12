@@ -58,7 +58,7 @@
 .Banner{
     background-image: linear-gradient(90deg, #003d91, #8dadff);
     padding: 10px;
-    margin: 35px auto 0;
+    margin: 0 auto;
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 10px;
@@ -115,8 +115,8 @@
 .InfoCards{
     display: flex;
     flex-wrap: wrap;
-    margin: 40px auto 15px;
-    gap: 15px;
+    margin: 10px auto 15px;
+    gap: 20px;
     padding: 15px 0 15px 15px;
 }
 .InfoCards > div:not(:last-child) {border-right: #bcbcbc 1px solid;}
@@ -131,7 +131,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding-right: 15px;
+    padding-right: 20px;
     margin: 0 auto;
     min-width: clamp(0px, 250px, 95vw);
 }
