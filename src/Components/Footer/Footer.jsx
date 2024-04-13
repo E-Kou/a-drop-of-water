@@ -7,61 +7,107 @@ import {motion} from 'framer-motion';
 const creditLinks = [
     {name:'Ιστορία της Θεσσαλίας',
 pageName:'Greek Paradise',
-link:'https://greeceparadise.gr/12-istoria-tis-thessalias/'
-},
+link:'https://greeceparadise.gr/12-istoria-tis-thessalias/',
+no:1,
+        codeNo:'credit1',
+ },
 {name:'Γεωγραφία',
 pageName:'enjoy thessaly',
 link:'https://enjoythessaly.com/geografia/'
-},
+,
+no:2,
+        codeNo:'credit2',
+ },
 {name:'UK heat and floods in south-east Europe blamed on ‘omega’ weather system',
 pageName:'The Guardian',
 link:'https://www.theguardian.com/world/2023/sep/06/uk-heatwave-floods-south-east-europe-omega-weather-system'
-},
+,
+no:3,
+        codeNo:'credit3',
+ },
 {name:'Θεσσαλία',
 pageName:'EO Browser',
 link:'https://sentinelshare.page.link/CMzf'
-},
+,
+no:4,
+        codeNo:'credit4',
+ },
 {name:'Κλιματικά δεδομένα Λάρισας',
 pageName:'ΕΜΥ',
 link:'http://www.emy.gr/emy/el/climatology/climatology_city?perifereia=Thessaly&poli=Larisa'
-},
+,
+no:5,
+        codeNo:'credit5',
+ },
 {name:'Κλιματικά δεδομένα Αγχίαλου',
 pageName:'ΕΜΥ',
 link:'http://www.emy.gr/emy/el/climatology/climatology_city?perifereia=Thessaly&poli=Volos_Aghialos'
-},
+,
+no:6,
+        codeNo:'credit6',
+ },
 {name:'Μηνιαίο Δελτίο Μετεωρολογικών Παραμέτρων Ελλάδα Σεπτέμβριος 2023',
 pageName:'Meteo',
 link:'https://stratus.meteo.noa.gr/data/bulletins/deltio_noa092023.pdf'
-},
+,
+no:7,
+        codeNo:'credit7',
+ },
 {name:'Από τις φωτιές στον Daniel: Η καταστροφή σε αριθμούς (infographic)',
 pageName:'CNNᴳᴿ',
 link:'https://www.cnn.gr/ellada/longform/382874'
-},
+,
+no:8,
+        codeNo:'credit8',
+ },
 {name:'Κακοκαιρία Daniel: Καταρρίφθηκε το ρεκόρ ημερήσιου ύψους βροχής στη χώρα μας',
 pageName:'Meteo',
 link:'https://www.meteo.gr/article_view.cfm?entryID=2913'
-},
+,
+no:9,
+        codeNo:'credit9',
+ },
 {name:'Τα ύψη βροχόπτωσης της κακοκαιρίας DANIEL στη Θεσσαλία',
 pageName:'Meteo',
 link:'https://meteo.gr/article_view.cfm?entryID=2930'
-},
+,
+no:10,
+        codeNo:'credit10',
+ },
 {name:'Ανάρτηση σχετικά με το αίτιο της κακοκαιρίας Daniel',
 pageName:'𝕏',
 link:'https://twitter.com/WeatherProf/status/1699278684283159017?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1699278684283159017%7Ctwgr%5E3dd243a3de547b34e233767fea2cbb5117e13826%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fwww.theguardian.com%2Fworld%2F2023%2Fsep%2F06%2Fuk-heatwave-floods-south-east-europe-omega-weather-system'
-},
+,
+no:11,
+        codeNo:'credit11',
+ },
+{name:'Λύσεις βασιζόμενες στην φύση για τον περιορισμό των πλημμυρών στην Ελλάδα',
+pageName:'Ευρωπαϊκή Τράπεζα Επενδύσεων',
+link:'https://www.eib.org/en/stories/nature-based-solutions-flood-greece'
+,
+no:12,
+        codeNo:'credit12',
+ },
 {name:'Μελέτη χρήσης λύσεων βασισμένων στην φύση για τις πλημμύρες στην Θεσσαλία',
 pageName:' Global Infastructure Basel & WWFᴳᴿ',
 link:'https://gib-foundation.org/wp-content/uploads/2022/05/2022_NbS_Thessaly_Pre-feasibility-study.pdf'
-},
+,
+no:13,
+        codeNo:'credit13',
+ },
+{name:'Βιώσιμη εκτίμηση κεφαλάιου αποκατάστασης ποταμών στην Ελλάδα',
+pageName:'Global Resource Centre',
+link:'https://nbi.iisd.org/report/savi-river-restoration-in-greece/'
+,
+no:14,
+        codeNo:'credit14',
+ }
 ]
 
 function Footer(props){
     return(
         <motion.footer layout>
-            {/* <div>
-            <div className="row warning-note"><h3></h3>
-  <p></p></div>
-  </div> */}
+
             <div className="row" id='sections'>
             <div> 
                 <img id='logotype' loading='lazy' src={fullLogo} />
@@ -89,7 +135,7 @@ function Footer(props){
                     <h4>Πηγές εργασίας</h4>
                     <div>
                     {creditLinks.map((credit)=><>
-                    <p><Link to={credit.link}>{credit.name} | {credit.pageName}</Link></p>
+                    <p className='credit' key={credit.no} id={credit.codeNo} ><Link to={credit.link}>{credit.name} | {credit.pageName}</Link></p>
                     </>)}
                     </div>
                     </div>
