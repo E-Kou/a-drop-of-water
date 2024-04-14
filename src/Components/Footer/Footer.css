@@ -13,8 +13,17 @@ footer{
     margin: auto;
 }
 
-#sections div#aboutUs:target{
-background-color: red;
+#sections #aboutUs:target{
+animation: flashing 5s 0.3s;
+outline-offset: 5px;
+}
+@keyframes flashing {
+    0%,50%,100%{
+        outline: rgba(255, 0, 0, 0) 5px solid;
+    }
+    20%,35%,65%,80%{
+        outline: red 5px solid;
+    }
 }
 
 #sections > * { flex: 1; padding-right: 10px;}
