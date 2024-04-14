@@ -18,7 +18,6 @@ import { Bar, Doughnut, Line } from 'react-chartjs-2';
 import boukefalas from "../../assets/boukefalas.webp"
 import agalmaBoukefalas from "../../assets/agalma_boukefalas.webp"
 import Daniel from "../../assets/daniel.webp"
-import schFront from "../../assets/sch.webp"
 import tc1 from "../../assets/tc1.webp"
 import tc2 from "../../assets/tc2.webp"
 import swir1 from "../../assets/swir1.webp"
@@ -87,12 +86,6 @@ function ResultsPanel() {
 }
 
 export const PagesContent = [
-  {title: 'Σχετικά με εμάς',
-    path: 'about',
-    panel: <img className='imgHero' src={schFront} />,
-    panelSrc: <p>Εικόνα: <a target='_blank' href='https://ehl.gr'>Το σχολείο μας</a></p>,
-
-  },
   {title: 'Περίληψη έργου',
     path: 'summary',
     panel: <video autoPlay muted>

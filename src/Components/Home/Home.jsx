@@ -21,7 +21,7 @@ function Home(){
         </div>
         <div style={{padding: '25px 12px', overflow: 'hidden', maxWidth: '100%'}}>
         <motion.div initial={{scaleY:0}} animate={{scaleY:1}} transition={{delay:2.2, stiffness:150, type:'spring', damping: 9}} className="Banner row">
-            <Link to="/pages/about">
+            <a href="#aboutUs">
             <div>
             <h2>Αυτό το έργο δημιουργήθηκε από το:</h2>
             <div id="BannerInfo">
@@ -29,7 +29,7 @@ function Home(){
             </div>
             </div>
             <img src={owl}/>
-            </Link>
+            </a>
         </motion.div>
         </div>
         <div className="row InfoCards">
