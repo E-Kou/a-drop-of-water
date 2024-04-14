@@ -13,8 +13,8 @@ function Home(){
         <div id="Hero">
 <motion.div initial={{translateY:100,opacity:0}} whileInView={{translateY:0,opacity:1}} transition={{duration:1, ease:'anticipate', delay:1}} id="left">
             <h1>Μια σταγόνα, μια ζωή</h1>
-            <p>Η κακοκαιρία Daniel προκάλεσε άνευ προηγουμένου φυσικές καταστροφές στην Θεσσαλία. Σε αυτή την εργασία αναλύουμε </p>
-<div><Link to='/pages/about' className="blueButton">Σχετικά με το έργο</Link></div>
+            <p>Η κακοκαιρία Daniel προκάλεσε άνευ προηγουμένου φυσικές καταστροφές στην Θεσσαλία. Σε αυτή την εργασία αναλύουμε τις συνέπειές αυτού του φυσικού φανομένου και συγκεντρώνουμε γενικότερες πληροφορίες πάνω σε αυτό.</p>
+<div><Link to='#aboutUs' className="blueButton">Σχετικά με το έργο</Link></div>
 </motion.div>
         <div id="imgWrapper"><motion.img initial={{filter:'brightness(1.35)', opacity:0, scale:3}} animate={{scale:1, opacity:1, filter:'brightness(1)'}} transition={{duration:1, ease:'anticipate'}} id="HeroImg" alt="Η πλυμμηρισμένη εικόνα της Θεσσαλίας." src={bannerImg}/>
         </div>

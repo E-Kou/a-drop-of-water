@@ -12,6 +12,11 @@ footer{
     gap:15px;
     margin: auto;
 }
+
+#sections div#aboutUs:target{
+background-color: red;
+}
+
 #sections > * { flex: 1; padding-right: 10px;}
 
 #sections > *:not(:last-child) {border-right: #ffffff6b 1px solid;}

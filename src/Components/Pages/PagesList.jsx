@@ -73,14 +73,11 @@ function ResultsPanel() {
       <div className={toggleTab == 'drone' ? 'open_tab droneIMG' : 'droneIMG'} ><div id='beforeFlooding'><h5>Θεσσαλία</h5><h4>Πλημμύρα λόγω κακοκαιρίας Daniel</h4></div><img src={thessaly} /></div>
     </div>
       <div className='Controller row'>
-        <div className={toggleTab == 'tc' ? 'open_btn' : ''} onClick={() => setToggleTab('tc')}><button>True color</button>
-          <span>True color composite</span>
+        <div title='True color composite' className={toggleTab == 'tc' ? 'open_btn' : ''} onClick={() => setToggleTab('tc')}><button>True color</button>
         </div>
-        <div className={toggleTab == 'swir' ? 'open_btn' : ''} onClick={() => setToggleTab('swir')}><button>SWIR</button>
-          <span>Short wave infrared composite</span>
+        <div title='Short wave infrared composite' className={toggleTab == 'swir' ? 'open_btn' : ''} onClick={() => setToggleTab('swir')}><button>SWIR</button>
         </div>
-        <div className={toggleTab == 'ndsi' ? 'open_btn' : ''} onClick={() => setToggleTab('ndsi')}><button>NDSI</button>
-          <span>Normalised Difference Snow Index</span>
+        <div title='Normalised Difference Snow Index' className={toggleTab == 'ndsi' ? 'open_btn' : ''} onClick={() => setToggleTab('ndsi')}><button>NDSI</button>
         </div>
         <div className={toggleTab == 'drone' ? 'open_btn' : ''} onClick={() => setToggleTab('drone')}><button>Εικόνα Drone</button>
         </div>
@@ -90,15 +87,13 @@ function ResultsPanel() {
 }
 
 export const PagesContent = [
-  {
-    title: 'Σχετικά με εμάς',
+  {title: 'Σχετικά με εμάς',
     path: 'about',
     panel: <img className='imgHero' src={schFront} />,
     panelSrc: <p>Εικόνα: <a target='_blank' href='https://ehl.gr'>Το σχολείο μας</a></p>,
 
   },
-  {
-    title: 'Περίληψη έργου',
+  {title: 'Περίληψη έργου',
     path: 'summary',
     panel: <video autoPlay muted>
       <source src='https://gpm.nasa.gov/sites/default/files/2023-09/Daniel_20230907_2330UTC.mp4' type='video/mp4' />
@@ -124,8 +119,7 @@ export const PagesContent = [
           <p>Αυτή η εργασία έχει σκοπό να αναλύσει τον άμεσο αντίκτιπο και το μέγεθος της κακοκαιρίας Daniel στη Θεσσαλία και όχι να αναλύσει θεωρίες κλιματικής αλλαγής. Για κάτι τέτοιο απαιτούνται δεδομένα το ελάχιστο 16 ετών κατόπιν συμβάντος.</p></div>
       </>
   },
-  {
-    title: "Κύρια αποτελέσματα και συμπεράσματα",
+  {title: "Κύρια αποτελέσματα και συμπεράσματα",
     path: "results",
     panel: <ResultsPanel />,
     panelSrc: <p>Πηγή χαρτών: <a target='_blank' href='https://apps.sentinel-hub.com/eo-browser/?zoom=10&lat=39.57606&lng=22.22122&themeId=DEFAULT-THEME&visualizationUrl=https%3A%2F%2Fservices.sentinel-hub.com%2Fogc%2Fwms%2Fbd86bcc0-f318-402b-a145-015f85b9427e&datasetId=S2L2A&fromTime=2023-09-10T00%3A00%3A00.000Z&toTime=2023-09-10T23%3A59%3A59.999Z&layerId=6-SWIR&demSource3D=%22MAPZEN%22'>EO Browser</a></p>,
@@ -223,8 +217,7 @@ export const PagesContent = [
       <a style={{ textDecoration: 'none' }} href='https://www.mediafire.com/file/m2xqatbzqmpmmhh' target='_blank'><div className='imgBox download'><img src={excel} /><p>excel-A-drop-of-water-a-life.xlsx</p>Λήψη</div></a>
     </>
   },
-  {
-    title: "Θεσσαλία",
+  {title: "Θεσσαλία",
     path: "thessaly",
     panel: <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2677558.1248216!2d21.4079969819568!3d39.57546826838777!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a7792f814128a5%3A0x100bd2ce2b9c5e0!2zzpjOtc-Dz4POsc67zq_OsQ!5e1!3m2!1sel!2sgr!4v1712518422705!5m2!1sel!2sgr" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>,
     content:
@@ -250,7 +243,10 @@ export const PagesContent = [
     <p>Είναι προφανές πως τέτοιου είδους πλημμύρες αποτελούν κρίσιμο πρόβλημα τόσο για την τοπική οικονομία όσο και για την ζωή των κατοίκων. </p>
     <p>Σχετικές λύσεις που προτάθηκαν στην μελέτη των GIB και WWFᴳᴿ με χρηματοδότηση από την Ευρωπαϊκή Τράπεζα Επενδύσεων συστήνουν χρήση φυσικών λύσεων. «Δουλεύοντας με τη φύση, όχι εναντίον της» αναφέρεται χαρακτηριστικά.</p>
     <p>Πιο συγκεκριμένα, λύσεις στηριζόμενες στην φύση όπως ¹·εκπλάτυνση ποταμών, ²·επανασύνδεση τους με πλημμυρικές πεδιάδες, οι οποίες μέχρι και σήμερα χρησιμοποιούνται για οικοδόμηση και γεωργία λόγω της υψηλής γονιμότητας του χώματός τους, ³·δημιουργία παρόχθιων δασών και ⁴·αφαίρεση ανθρώπινων κατασκευασμάτων με σκοπό τον έλεγχο της ροής του νερού τίθενται ως πιο δραστικές και πιο ωφελείς ως προς το κόστος τους συγκριτικά με υβριδικές ή συμβατικές “γκρίζες” λύσεις, συμφωνά με <Link target='_blank' to='https://nbi.iisd.org/report/savi-river-restoration-in-greece/'>μια άλλη έρευνα</Link>.</p>
-    <img style={{margin: '15px auto', width:'100%', maxWidth:700, display:'block'}} src={solutions} />
+    <div style={{margin: '15px auto 25px', width: 'fit-content'}}><img style={{width:'100%', maxWidth:700, display:'block'}} src={solutions} />
+    <p style={{fontSize:'clamp(10px, 3vw, 1rem)', float: 'right'}} >Πηγή εικόνας: <Link to='https://www.researchgate.net/figure/A-possible-representation-of-the-spectrum-of-adaptation-solutions-for-coastal-protection_fig1_336016962' target='_blank'>ResearchGate</Link>
+    </p>
+    </div>
     <p>Αναμφισβήτητα όμως, ο <b>περιορισμός</b> της ανθρώπινης παρεμβολής στην φύση αποτελεί την καταλληλότερη, αν και δυσκολότερη απ’ όλες, λύση για την αποκατάσταση της ζημιάς που η κλιματική αλλαγή φαίνεται να έχει προκαλέσει στην Γη.</p>
     </>
   },

@@ -109,7 +109,7 @@ function Footer(props){
         <motion.footer layout>
 
             <div className="row" id='sections'>
-            <div> 
+            <div id='aboutUs'> 
                 <img id='logotype' loading='lazy' src={fullLogo} />
                 <p>Καλωσήρθατε στην ιστοσελίδα της εργασίας «Μια στραγόνα, μια ζωή» του Ομίλου Μετεωρολογίας - Αστρονομίας του 1ου Πειραματικού Γυμνασίου Λάρισας στα πλαίσα του προγράμματος <a href='https://climatedetectives.esa.int/'>Climate Detectives</a>.</p>
             </div>
