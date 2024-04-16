@@ -13,7 +13,7 @@ function Home(){
         <div id="Hero">
 <motion.div initial={{translateY:100,opacity:0}} whileInView={{translateY:0,opacity:1}} transition={{duration:1, ease:'anticipate', delay:1}} id="left">
             <h1>Μια σταγόνα, μια ζωή</h1>
-            <p>Η κακοκαιρία Daniel προκάλεσε άνευ προηγουμένου φυσικές καταστροφές στην Θεσσαλία. Σε αυτή την εργασία αναλύουμε τις συνέπειές αυτού του φυσικού φανομένου και συγκεντρώνουμε γενικότερες πληροφορίες σετικά με αυτό.</p>
+            <p>Η κακοκαιρία Daniel προκάλεσε άνευ προηγουμένου φυσικές καταστροφές στην Θεσσαλία. Σε αυτή την εργασία αναλύουμε τις συνέπειές αυτού του φυσικού φαινομένου και συγκεντρώνουμε γενικότερες πληροφορίες σχετικά με αυτό.</p>
 <div><a href='#aboutUs' className="blueButton">Σχετικά με το έργο</a></div>
 </motion.div>
         <div id="imgWrapper"><motion.img initial={{filter:'brightness(1.35)', opacity:0, scale:3}} animate={{scale:1, opacity:1, filter:'brightness(1)'}} transition={{duration:1, ease:'anticipate'}} id="HeroImg" alt="Η πλυμμηρισμένη εικόνα της Θεσσαλίας." src={bannerImg}/>
@@ -35,12 +35,12 @@ function Home(){
         <div className="row InfoCards">
 <div>
     <h2>Ερευνητικό Ερώτημα</h2>
-    <p>Δημιουρήσαμε την εργασία μας με το ακόλουθο ερώτημα στο κέντρο:...</p>
+    <p>Δημιουργήσαμε την εργασία μας με το ακόλουθο ερώτημα στο κέντρο:...</p>
     <div><Link to='/pages/research-question' className="secondaryButton">Μάθετε Περισσότερα</Link></div>
 </div>
 <div>
-    <h2>Πέριληψη Έργου</h2>
-    <p>Στην εργασία μας αναλύσαμε τα μετεωρολογικά δεδομένα που συλλέξαμε απο τις σελίδες...</p>
+    <h2>Περίληψη Έργου</h2>
+    <p>Στην εργασία μας αναλύσαμε τα μετεωρολογικά δεδομένα που συλλέξαμε από τις σελίδες...</p>
     <div><Link to='/pages/summary' className="secondaryButton">Μάθετε Περισσότερα</Link></div>
 </div>
 <div>

@@ -127,7 +127,7 @@ export const PagesContent = [
         <li>πλημμύρα και μακροχρόνια αχρήστευση του ¼ του καλλιεργήσιμου εδάφους της Θεσσαλίας καθώς και καταστροφή αρκετών υποδομών.</li>
         <li>συνολική ζημιά που ανέρχεται στα εκατομμύρια και είναι τριπλάσια από την κακοκαιρία «Ιανό».</li>
       </ul>
-      <p>Όπως είναι προφανές και από χάρτες στο πάνω μέρος της σελίδας, η απερίγραπτη ποσότητα νερού που <Link target='_blank' to='https://el.wiktionary.org/wiki/%E1%BD%95%CF%89#%CE%91%CF%81%CF%87%CE%B1%CE%AF%CE%B1_%CE%B5%CE%BB%CE%BB%CE%B7%CE%BD%CE%B9%CE%BA%CE%AC_(grc)'>ὕσθη</Link> μέχρι τις 10/09/23 (ημερομηνία χάρτη από EO Browser) κατέστεψε οικίες, χωράφια και γενικότερα ό,τι βρέθηκε στον δρόμο της.</p>
+      <p>Όπως είναι προφανές και από χάρτες στο πάνω μέρος της σελίδας, η απερίγραπτη ποσότητα νερού που <Link target='_blank' to='https://el.wiktionary.org/wiki/%E1%BD%95%CF%89#%CE%91%CF%81%CF%87%CE%B1%CE%AF%CE%B1_%CE%B5%CE%BB%CE%BB%CE%B7%CE%BD%CE%B9%CE%BA%CE%AC_(grc)'>ὕσθη</Link> μέχρι τις 10/09/23 (ημερομηνία χάρτη από EO Browser) κατέστρεψε οικίες, χωράφια και γενικότερα ό,τι βρέθηκε στον δρόμο της.</p>
       <div className='twoCharts'>
         <div><Bar
           data={{
@@ -207,7 +207,7 @@ export const PagesContent = [
         <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/8lPl7FJBzZI?si=yNFsEyI8hyNIHf41&amp;start=26" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       </div>
       <iframe style={{ borderRadius: 10 }} width="100%" height="900" frameborder="0" src="https://onedrive.live.com/embed?resid=9929E4ADFB90BE21%215459&authkey=%21AIBTK8VEnNMl7vU&em=2&wdAllowInteractivity=False&ActiveCell='%CE%A6%CF%8D%CE%BB%CE%BB%CE%BF1'!A117&Item='%CE%A6%CF%8D%CE%BB%CE%BB%CE%BF1'!A1%3AN181&wdHideGridlines=True&wdDownloadButton=True&wdInConfigurator=True&wdInConfigurator=True"></iframe>
-      <a style={{ textDecoration: 'none' }} href='https://www.mediafire.com/file/m2xqatbzqmpmmhh' target='_blank'><div className='imgBox download'><img src={excel} /><p>excel-A-drop-of-water-a-life.xlsx</p>Λήψη</div></a>
+      <a style={{ textDecoration: 'none' }} href='../../assets/excel-A-drop-of-water-a-life.xlsx' download><div className='imgBox download'><img src={excel} /><p>excel-A-drop-of-water-a-life.xlsx</p>Λήψη</div></a>
     </>
   },
   {title: "Θεσσαλία",
@@ -225,7 +225,7 @@ export const PagesContent = [
   {title: "Ερευνητικό ερώτημα",
     path: "research-question",
     panel: <img className='imgHero' src={Daniel} />,
-    content: <div><p style={{ fontSize: '1.25rem', marginBottom: 15 }}>Η ομάδα μας, αποτελούμενη από τον Άγγελο Γεωργίου και Ευάγγελο Κουτσογιάννη, μαθητές του 1ου Πειραματικού Γυμνασίου Λάρισας, επέλεξε ως κεντρικό ερευνητικό ερώτημα της εγασίας μας είναι το εξής:</p>
+    content: <div><p style={{ fontSize: '1.25rem', marginBottom: 15 }}>Η ομάδα μας, αποτελούμενη από τον Άγγελο Γεωργίου και Ευάγγελο Κουτσογιάννη, μαθητές του 1ου Πειραματικού Γυμνασίου Λάρισας, επέλεξε ως κεντρικό ερευνητικό ερώτημα της εργασίας μας είναι το εξής:</p>
       <div id='theQuestion'>Πώς επηρέασε τη Θεσσαλία η κακοκαιρία Daniel;</div>
     </div>
   },
