@@ -167,9 +167,6 @@ function Footer(props){
                         <li>Βασίλειος Τουρναβίτης</li>
                     </ul>
                     </div>
-                    <div>
-                    <Link to='/pages/about' style={{marginTop:10}} className='blueButton'>Σχετικά με εμάς</Link >
-                    </div>
                     </div>
                 </div>
 
