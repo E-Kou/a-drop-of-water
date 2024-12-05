@@ -4,6 +4,8 @@
 
 # A Drop of Water, a Life
 
+[Αρχείο επίσης διαθέσημο στα ελληνικά](README.el.md)
+<br>
 [View the website](https://a-drop-of-water-a-life.web.app/)
 
 ## Welcome!

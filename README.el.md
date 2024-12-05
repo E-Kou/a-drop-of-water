@@ -4,6 +4,8 @@
 
 # Μια σταγόνα, μια ζωή
 
+[File also available in English](README.md)
+<br>
 [Δείτε την ιστοσελίδα](https://a-drop-of-water-a-life.web.app/)
 
 ## Καλώς ήρθατε!
