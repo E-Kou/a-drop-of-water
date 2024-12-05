@@ -169,6 +169,19 @@ display: flex;
 flex-wrap: wrap;
 gap: 20px;
 }
+#bottom .CardContents#Tab4 .CardArea .scLink{
+    display: flex !important;
+    align-items: center;
+  }
+  #bottom .CardContents#Tab4 .CardArea .scLink img{
+    height: 4rem;
+    width: 4rem;
+    padding: 0.7rem;
+  }
+  #bottom .CardContents#Tab4 .CardArea .scLink span{
+    display: block;
+    max-width: min(100%, 12rem);
+  }
 #bottom .CardContents *{
     opacity: 0;
     transition: opacity 400ms ease-in-out;

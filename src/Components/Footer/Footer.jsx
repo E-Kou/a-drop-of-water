@@ -111,7 +111,7 @@ function Footer(props){
             <div className="row" id='sections'>
             <div id='aboutUs'> 
                 <img id='logotype' loading='lazy' src={fullLogo} />
-                <p>Καλώς ήρθατε στην ιστοσελίδα της εργασίας «Μια σταγόνα, μια ζωή» του Ομίλου Μετεωρολογίας - Αστρονομίας του 1ου Πειραματικού Γυμνασίου Λάρισας στα πλαίσια του προγράμματος <a href='https://climatedetectives.esa.int/'>Climate Detectives</a>. Θεσσαλία. Σε αυτή την εργασία αναλύουμε τις συνέπειές αυτού της κακοκαιρίας Daniel και συγκεντρώνουμε γενικότερες πληροφορίες σχετικά με αυτήν.</p>
+                <p>Καλώς ήρθατε στην ιστοσελίδα της εργασίας «Μια σταγόνα, μια ζωή» του Ομίλου Μετεωρολογίας - Αστρονομίας του 1ου Πειραματικού Γυμνασίου Λάρισας στα πλαίσια του προγράμματος <a href='https://climatedetectives.esa.int/'>Climate Detectives</a>. Σε αυτή την εργασία αναλύουμε τις συνέπειές της κακοκαιρίας Daniel στη Θεσσαλία και συγκεντρώνουμε γενικότερες πληροφορίες σχετικά με αυτήν.</p>
             </div>
             <div>
       <h2>Σελίδες εργασίας</h2>
@@ -166,6 +166,9 @@ function Footer(props){
                     <ul>
                         <li>Βασίλειος Τουρναβίτης</li>
                     </ul>
+                    </div>
+                    <div>
+                    <Link to="https://github.com/E-Kou/a-drop-of-water" className="scLink"><img src='/github-mark-white.svg'/><span>Κώδικας Σελίδας διαθέσιμος για προβολή</span></Link>
                     </div>
                     </div>
                 </div>
